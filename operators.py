@@ -20,7 +20,7 @@ class SetSceneFromClipOperator(bpy.types.Operator):
         # set timeline range
         if scene.SSFC_change_range:
             scene.frame_start = clip.frame_start
-            scene.frame_end = clip.frame_start + clip.frame_duration
+            scene.frame_end = clip.frame_start + clip.frame_duration - 1
 
         # set framerate
         scene.render.fps = scene.SSFC_framerate
