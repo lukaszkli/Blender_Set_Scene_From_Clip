@@ -10,7 +10,6 @@ class SetSceneFromClipOperator(bpy.types.Operator):
 
         # clip from movie clip editor, not sequencer
         clip = context.edit_movieclip
-        print(clip)
 
         # set resolution
         if scene.SSFC_change_res:
